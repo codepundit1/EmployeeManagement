@@ -22,4 +22,6 @@ Route::get('/', [EmployeeController::class, 'home']);
 Route::get('/list', [EmployeeController::class, 'list']);
 Route::view('/add', 'add');
 Route::post('/add', [EmployeeController::class, 'addEmp']);
-Route::post('/delete/{id}', [EmployeeController::class, 'delete']);
+Route::get('/delete/{id}', [EmployeeController::class, 'delete']);
+Route::get('/edit/{id}', [EmployeeController::class, 'show']);
+Route::put('/update/{id}', [EmployeeController::class, 'update']);

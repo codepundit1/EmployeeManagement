@@ -31,8 +31,8 @@
                 <td>{{$list->email}}</td>
                 <td>{{$list->phone}}</td>
                 <td>
-                    <a href="" class="btn btn-success btn-sm"><i class="fas fa-edit"></i></a>
-                    <a href="" class="btn btn-danger btn-sm"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                    <a href="/edit/{{$list->id}}" class="btn btn-success btn-sm"><i class="fas fa-edit"></i></a>
+                    <a href="/delete/{{$list->id}}" class="btn btn-danger btn-sm"><i class="fa fa-trash" ></i></a>
                 </td>
             </tr>
             @endforeach
