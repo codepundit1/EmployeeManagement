@@ -21,6 +21,16 @@ class EmployeeController extends Controller
 
     public function addEmp(Request $req)
     {
-        return Employee::all();
+        $employee = new Employee();
+        $employee->name=$req->input('name');
+        $employee->email=$req->input('email');
+        $employee->phone=$req->input('phone');
+        $employee->save();
+        Session()->flash('status', 'Employee Added Successfully');
+
+        return redirect('list');
     }
+
+
+
 }

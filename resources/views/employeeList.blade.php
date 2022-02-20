@@ -6,6 +6,14 @@
      <span class="col-md-4"><a href="/add" class="btn btn-primary btn-sm float-end">Add Employee</a></span>
    </span>
 
+   @if (Session::has('status'))
+
+  <div class="alert alert-success alert-dismissible">
+    <button type="button" class="btn-close btn-sm" data-bs-dismiss="alert"></button>
+    {{Session::get('status')}}
+  </div>
+   @endif
+
     <table class="table table-striped table-hover">
         <thead>
             <tr>

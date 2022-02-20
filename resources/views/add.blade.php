@@ -2,6 +2,10 @@
 @section('content')
 <div class="container">
     <div class="col-md-6" style="margin: 0 auto;">
+        <span class="row">
+            <span class="col-md-8"> <h2 class="mb-3">Add Employee</h2></span>
+            <span class="col-md-4"><a href="/list" class="btn btn-primary btn-sm float-end">Back</a></span>
+          </span>
         <form action="add" method="post">
             @csrf
             <div class="mb-3">
